@@ -2,8 +2,8 @@ import pymongo
 import json
 
 MONGO_TIME_OUT = 1000
-MONGO_USER = ""  #Usuario
-MONGO_KEY = ""  #Contraseña
+MONGO_USER = "marqos_neo"  #Usuario
+MONGO_KEY = "123456marcos"  #Contraseña
 MONGO_URL = f"mongodb+srv://{MONGO_USER}:{MONGO_KEY}@cluster0.do5eava.mongodb.net/test"
 
 #Creamos la conexión con MongoDB
