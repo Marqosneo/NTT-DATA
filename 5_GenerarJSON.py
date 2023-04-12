@@ -35,7 +35,7 @@ try:
     coleccion = base_datos[MONGO_COLECCION]
     
     # Obtenemos todos los documentos de la colección y los guardamos en un archivo json
-    with open('Estados.json', 'w') as file:
+    with open('EstadosUnidos.json', 'w') as file:
         estados = list(coleccion.find())
         #El atributo que se genera automáticamente id_, nos da problemas con el formato JSON, por eso lo eliminamos
         # Eliminación del campo ObjectId
