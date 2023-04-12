@@ -1,9 +1,8 @@
 import pymongo
-import json
 
 MONGO_TIME_OUT = 1000
-MONGO_USER = "" #Poner tu Usuario
-MONGO_KEY = "" #Poner tu Contraseña
+MONGO_USER = "marqos_neo" #Poner tu Usuario
+MONGO_KEY = "123456marcos" #Poner tu Contraseña
 MONGO_URL = f"mongodb+srv://{MONGO_USER}:{MONGO_KEY}@cluster0.do5eava.mongodb.net/test"
 
 # Partimos de una lista de estados con sus datos, lo mismo que se plateó en el Reto Grupal 1
@@ -56,7 +55,8 @@ try:
     print("Conexion con mongo exitosa")
     #cerramos conexión
     cliente.close()
-#Vamos a recoger los posibles errores que pudiéramos tener, en este caso, exceso de tiempo de respuesta
+# Vamos a recoger los posibles errores que pudiéramos tener.
+# En este caso, exceso de tiempo de respuesta.
 except pymongo.errors.ServerSelectionTimeoutError as errorTiempo:
     #mostramos mensaje en tal caso
     print("Tiempo excedido de carga")
